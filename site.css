@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: blue;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+#profile-pic {
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid orange;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+h1 {
+    font-family:Designer;
+    color: orange;
+    font-size: 50px;
+}
+
+
+h2 {
+    font-family: Designer;
+    color: orange;
+    font-size: 40px;
+}
+
+.textbox {
+    font-family: BigNoodleTitling;
+    color: navy;
+    font-size: 30px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(247, 226, 188);
+    width: 1100px;
+    margin: 20px auto;
+    text-align: justify;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+    .textbox:hover {
+        background-color: rgb(255, 220, 154);
+        color: darkorange;
+        transform: scale(1.01);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        
+    }
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-family: BigNoodleTitling;
+    font-size: 30px;
+}
+
+#skills ul li {
+    padding: 5px;
+    background-color:  rgb(247, 226, 188);
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: navy;
+}
+
+    #skills ul li:hover {
+        background-color:  rgb(255, 220, 154); 
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        color: darkorange;
+
+    }
+
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(255, 220, 154);
+    border-radius: 15px;
+}
+
+    #projects-container .project {
+        background-color:  rgb(247, 226, 188);
+        padding: 20px;
+        margin: 10px;
+        width: calc(33% - 20px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+@media (max-width: 768px) {
+    #projects-container .project {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 500px) {
+    #projects-container .project {
+        width: 100%;
+    }
+}
+
+.project {
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative; 
+}
+
+    .project h3 {
+        color: blue;
+        font-size: 40px;
+        font-family: BigNoodleTitling;
+    }
+
+    .project p {
+        color: darkorange;
+        font-size: 20px;
+        font-family: BigNoodleTitling;
+        text-align: justify;
+    }
+
+    .project a {
+        color: blue;
+        font-family: BigNoodleTitling;
+        padding-bottom: 0;
+        font-size: 15px;
+
+    }
+
+    .project a:hover {
+        color: navy;
+        font-family: BigNoodleTitling;
+        padding-bottom: 0;
+        font-size: 16px;
+    }
+    .project img {
+        display: none; 
+        position: absolute; 
+        top: -100%; 
+        left: 0; 
+        width: 100%;
+        max-width: 300px; 
+        height: auto; 
+        margin-bottom: 10px; 
+        border-radius: 5px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10; 
+    }
+    
+    .project:hover img {
+        display: block;
+    }
+
+
+form {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 220, 154);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+    form label {
+        font-family: BigNoodleTitling;
+        font-size: 25px;
+        margin-bottom: 0;
+        flex-basis: auto;
+        margin-right: 10px;
+                color: blue;
+
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-right: 10px;
+        background-color: rgb(247, 226, 188);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    form textarea {
+        flex: 2;
+    }
+
+    form button[type="submit"] {
+        background-color: orange;
+        color: blue;
+        padding: 5px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: BigNoodleTitling;
+        letter-spacing: 2px;
+        font-size: 25px;
+        flex-shrink: 0; 
+    }
+
+        form button[type="submit"]:hover {
+            background-color: blue;
+            color: orange;
+
+        }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: lightcyan; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: lightsteelblue;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+    font-family: BigNoodleTitling;
+    font-size: 30px;
+    text-align: center;
+}
+
+.close {
+    color: red;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 600px;
+}
+
+    .close:hover,
+    .close:focus {
+        color: darkred;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        
+    } 
+
+    p{
+        font-family: Designer;
+        color: blue;
+
+    }
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: blue;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: navy
+    ; 
+}
+
+
+
+
+
+
+
+    
