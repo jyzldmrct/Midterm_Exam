@@ -41,6 +41,9 @@ h1 {
     font-family:Designer;
     color: orange;
     font-size: 50px;
+    text-shadow: 2px 2px 4px rgb(0, 9, 94); 
+
+    
 }
 
 
@@ -48,6 +51,8 @@ h2 {
     font-family: Designer;
     color: orange;
     font-size: 40px;
+    text-shadow: 2px 2px 4px rgb(0, 9, 94); 
+
 }
 
 .textbox {
@@ -61,12 +66,13 @@ h2 {
     margin: 20px auto;
     text-align: justify;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 
 }
 
     .textbox:hover {
         background-color: rgb(255, 220, 154);
-        color: darkorange;
+        color: rgb(255, 136, 0);
         transform: scale(1.01);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         
@@ -140,6 +146,8 @@ li {
         color: blue;
         font-size: 40px;
         font-family: BigNoodleTitling;
+        text-shadow: 2px 2px 4px rgb(255, 255, 255); 
+
     }
 
     .project p {
@@ -255,7 +263,7 @@ form {
 }
 
 .modal-content {
-    background-color: lightsteelblue;
+    background-color: rgb(252, 213, 177);
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
@@ -263,6 +271,7 @@ form {
     font-family: BigNoodleTitling;
     font-size: 30px;
     text-align: center;
+    border-radius: 15px;
 }
 
 .close {
@@ -271,6 +280,7 @@ form {
     font-size: 35px;
     font-weight: bold;
     margin-left: 600px;
+    margin-top: 0;
 }
 
     .close:hover,
@@ -291,7 +301,7 @@ form {
 
     p{
         font-family: Designer;
-        color: blue;
+        color: orange;
 
     }
 
@@ -301,7 +311,7 @@ form {
 
 .social-media a {
     margin: 0 10px;
-    color: blue;
+    color: orange;
     text-decoration: none;
     font-size: 24px;
 }
